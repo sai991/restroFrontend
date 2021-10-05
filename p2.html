@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Font Awesome Icons</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+.btn {
+  border: none;
+  background-color: inherit;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+ 
+}
+.warning {
+  color: white;
+}
+
+.warning:hover {
+  background: red;
+  color: white;
+}
+.ex1{
+background-color:black;
+width: 1500px;
+padding: 1px;
+
+}
+body{background-color: #2b2525;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Create two unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.left {
+  width: 70%;
+}
+
+.right {
+  width: 30%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.col{
+  float: left;
+  width: 16.66%;
+}
+
+/* Clear floats after the columns */
+.r:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+input[type=number] {
+height:30px;
+padding:1px 1px;
+marging:3px;
+box-sizing:border-box;
+border:3px solid black;
+}
+button{
+background-color:red;
+color:white;
+border-color:black;
+}
+</style>
+</head>
+<body>
+
+<div class="ex1">
+ 
+<p><font size="6" color="white"><b>Tap
+<i class="fa fa-glass" style="font-size:36px;color:red"></i>ate</b></font>
+&nbsp &nbsp  &nbsp &nbsp  &nbsp  &nbsp &nbsp  &nbsp &nbsp
+&nbsp &nbsp  &nbsp &nbsp  &nbsp  &nbsp &nbsp  &nbsp &nbsp
+&nbsp &nbsp  &nbsp &nbsp  &nbsp  &nbsp &nbsp  &nbsp &nbsp
+&nbsp &nbsp  &nbsp &nbsp  &nbsp  &nbsp &nbsp  &nbsp &nbsp
+&nbsp &nbsp  &nbsp &nbsp  &nbsp  &nbsp &nbsp  &nbsp &nbsp
+&nbsp &nbsp  &nbsp &nbsp  &nbsp  &nbsp &nbsp  &nbsp &nbsp
+&nbsp &nbsp  &nbsp &nbsp  &nbsp  &nbsp &nbsp  &nbsp &nbsp
+&nbsp &nbsp  &nbsp &nbsp  &nbsp  &nbsp &nbsp  &nbsp &nbsp
+&nbsp &nbsp  &nbsp &nbsp  &nbsp  &nbsp &nbsp  &nbsp &nbsp
+<button onclick="window.location.href='rest.html';" class="btn warning float-right">Burgers</button>
+<button onclick="window.location.href='chicken.html';" class="btn warning float-right">chicken</button>
+<button onclick="window.location.href='2.html';" class="btn warning float-right">Salads</button>
+<button onclick="window.location.href='pizza.html';" class="btn warning float-right">Pizza</button>
+
+</p>
+
+</div>
+
+<div class="row">
+  <div class="column left" >
+   <center> <br><br><br><br><br><br>
+   <img style="border-radius: 50%;" src="p2.jpeg" width="500" height="500" />
+ </center> </div>
+  <div class="column right" >
+   <font size="5" color="white"><h1>Composed Salads</h1>
+<p>370 Cal.</p><p>Cost: Rs.450</p>
+<p>Our composed salads are famous for their atractive look and tymmy taste. It is a salad of many ingredients that are not tossed together but, instead, conscientiously arranged, whether in a pile or side by side, on a plate or in a bowl, with attention to complimentary flavors and colors.
+</p>
+<p>At participating McDonald’s for a limited time.
+</p>
+<p>*Weight before cooking 4 oz.
+</p>
+<p>**Fresh beef available at most restaurants in contiguous US. Not available in Alaska, Hawaii, and US Territories.
+  </p></font></div>
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<h1><font size="7" color="white"><center>Ingredients</center></font></h1><br><br>
+<div class="r"><font size="5" color="white">
+<div class="col"><center><img style="border-radius: 30%;" src="2.1avocado.jpg" width="200" height="200" />
+<p>AVOCADO</p>
+Quantity:<input type="number" id="myNumber1" ><br><br>
+Cost(in Rs):<input type="number" id="myNumber1.1" ><br><br>
+<button onclick="myFunction1()">+1 ADD</button>
+<button onclick="myFunction10()">-1 SUB</button>
+</center></div>
+<div class="col"><center><img style="border-radius: 30%;" src="2.2egg.jpg" width="200" height="200" />
+<p>EGG</p>
+Quantity:<input type="number" id="myNumber2" ><br><br>
+Cost(in Rs):<input type="number" id="myNumber2.2" ><br><br>
+<button onclick="myFunction2()">+1 ADD</button>
+<button onclick="myFunction20()">-1 SUB</button></center>
+</div>
+<div class="col"><center><img style="border-radius: 30%;" src="2.3herbs.jpg" width="200" height="200" />
+<p>SOFT HERBS</p>
+Quantity:<input type="number" id="myNumber3"><br><br>
+Cost(in Rs):<input type="number" id="myNumber3.3" ><br><br>
+<button onclick="myFunction3()">+1 ADD</button>
+<button onclick="myFunction30()">-1 SUB</button></center>
+</div>
+<div class="col"><center><img style="border-radius: 30%;" src="2.4prawn.png" width="200" height="200" />
+<p>PRAWNS</p>
+Quantity:<input type="number" id="myNumber4"><br><br>
+Cost(in Rs):<input type="number" id="myNumber4.4" ><br><br>
+<button onclick="myFunction4()">+1 ADD</button>
+<button onclick="myFunction40()">-1 SUB</button></center>
+</div>
+<div class="col"><center><img style="border-radius: 30%;" src="2.5nuts.jpg" width="200" height="200" />
+<p>ROSTED NUTS</p>
+Quantity:<input type="number" id="myNumber5" ><br><br>
+Cost(in Rs):<input type="number" id="myNumber5.5" ><br><br>
+<button onclick="myFunction5()">+1 ADD</button>
+<button onclick="myFunction50()">-1 SUB</button>
+</center></div>
+<div class="col"><center><img style="border-radius: 30%;" src="2.6lemon.jpg" width="200" height="200" />
+<p>LEMON</p>
+Quantity:<input type="number" id="myNumber6" ><br><br>
+Cost(in Rs):<input type="number" id="myNumber6.6" ><br><br>
+<button onclick="myFunction6()">+1 ADD</button>
+<button onclick="myFunction60()">-1 SUB</button>
+</center></div>
+</div>
+
+<br><br><br>
+<center>
+Total Cost(in Rs.):<input type="number" id="myNumber" value="450" ><br><br>
+
+</center>
+<script>
+function myFunction1() {
+  document.getElementById("myNumber1").stepUp(1);
+  document.getElementById("myNumber1.1").stepUp(10);
+  document.getElementById("myNumber").stepUp(10);
+}
+function myFunction10() {
+  document.getElementById("myNumber1").stepDown(1);
+  document.getElementById("myNumber1.1").stepDown(10);
+  document.getElementById("myNumber").stepDown(10);
+}
+function myFunction2() {
+  document.getElementById("myNumber2").stepUp(1);
+  document.getElementById("myNumber2.1").stepUp(30);
+  document.getElementById("myNumber").stepUp(30);
+}
+function myFunction20() {
+  document.getElementById("myNumber2").stepDown(1);
+  document.getElementById("myNumber2.1").stepDown(30);
+  document.getElementById("myNumber").stepDown(30);
+}
+function myFunction3() {
+  document.getElementById("myNumber3").stepUp(1);
+  document.getElementById("myNumber3.1").stepUp(25);
+  document.getElementById("myNumber").stepUp(25);
+}
+function myFunction30() {
+  document.getElementById("myNumber3").stepDown(1);
+  document.getElementById("myNumber3.1").stepDown(25);
+  document.getElementById("myNumber").stepDown(25);
+}
+function myFunction4() {
+  document.getElementById("myNumber4").stepUp(1);
+  document.getElementById("myNumber4.4").stepUp(10);
+  document.getElementById("myNumber").stepUp(10);
+}
+function myFunction40() {
+  document.getElementById("myNumber4").stepDown(1);
+  document.getElementById("myNumber4.4").stepDown(10);
+  document.getElementById("myNumber").stepDown(10);
+}
+function myFunction5() {
+  document.getElementById("myNumber5").stepUp(1);
+  document.getElementById("myNumber5.5").stepUp(10);
+  document.getElementById("myNumber").stepUp(10);
+}
+function myFunction50() {
+  document.getElementById("myNumber5").stepDown(1);
+  document.getElementById("myNumber5.5").stepDown(10);
+  document.getElementById("myNumber").stepDown(10);
+}
+function myFunction6() {
+  document.getElementById("myNumber6").stepUp(1);
+  document.getElementById("myNumber6.6").stepUp(10);
+  document.getElementById("myNumber").stepUp(10);
+}
+function myFunction60() {
+  document.getElementById("myNumber6").stepDown(1);
+  document.getElementById("myNumber6.6").stepDown(10);
+  document.getElementById("myNumber").stepDown(10);
+}
+</script>
+
+</body>
+</html>

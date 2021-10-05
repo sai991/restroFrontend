@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Font Awesome Icons</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+.btn {
+  border: none;
+  background-color: inherit;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+  
+}
+.warning {
+  color: white;
+}
+
+.warning:hover {
+  background: red;
+  color: white;
+}
+.ex1{
+	background-color:black;
+width: 1500px;
+padding: 1px;
+
+}
+body{background-color: #2b2525;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Create two unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.left {
+  width: 70%;
+}
+
+.right {
+  width: 30%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.col{
+  float: left;
+  width: 16.66%;
+}
+
+/* Clear floats after the columns */
+.r:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+input[type=number] {
+height:30px;
+padding:1px 1px;
+marging:3px;
+box-sizing:border-box;
+border:3px solid black;
+}
+button{
+background-color:red;
+color:white;
+border-color:black;
+}
+</style>
+</head>
+<body>
+
+<div class="ex1">
+ 
+<p><font size="6" color="white"><b>Tap
+<i class="fa fa-glass" style="font-size:36px;color:red"></i>ate</b></font>
+&nbsp &nbsp  &nbsp &nbsp  &nbsp  &nbsp &nbsp  &nbsp &nbsp
+&nbsp &nbsp  &nbsp &nbsp  &nbsp  &nbsp &nbsp  &nbsp &nbsp
+&nbsp &nbsp  &nbsp &nbsp  &nbsp  &nbsp &nbsp  &nbsp &nbsp
+&nbsp &nbsp  &nbsp &nbsp  &nbsp  &nbsp &nbsp  &nbsp &nbsp
+&nbsp &nbsp  &nbsp &nbsp  &nbsp  &nbsp &nbsp  &nbsp &nbsp
+&nbsp &nbsp  &nbsp &nbsp  &nbsp  &nbsp &nbsp  &nbsp &nbsp
+&nbsp &nbsp  &nbsp &nbsp  &nbsp  &nbsp &nbsp  &nbsp &nbsp
+&nbsp &nbsp  &nbsp &nbsp  &nbsp  &nbsp &nbsp  &nbsp &nbsp
+&nbsp &nbsp  &nbsp &nbsp  &nbsp  &nbsp &nbsp  &nbsp &nbsp
+<button onclick="window.location.href='rest.html';" class="btn warning float-right">Burgers</button>
+<button onclick="window.location.href='chicken.html';" class="btn warning float-right">chicken</button>
+<button onclick="window.location.href='2.html';" class="btn warning float-right">Salads</button>
+<button onclick="window.location.href='pizza.html';" class="btn warning float-right">Pizza</button>
+
+</p>
+
+</div>
+
+<div class="row">
+  <div class="column left" >
+   <center> <br><br><br><br><br><br>
+   <img style="border-radius: 50%;" src="burger5_1.png" width="500" height="500" />
+ </center> </div>
+  <div class="column right" >
+   <font size="5" color="white"><h1> Quarter Pounder®* with Cheese Deluxe</h1>
+<p>650 Cal.
+<p>The Quarter Pounder® with Cheese Deluxe is a fresh take on a Quarter Pounder® classic. Crisp leaf lettuce and Roma tomato slices top a ¼ lb.* of 100% fresh beef that’s hot, deliciously juicy and cooked when you order. Seasoned with just a pinch of salt and pepper and sizzled on our flat iron grill. Layered with two slices of melty American cheese, creamy mayo, slivered onions and tangy pickles on a soft, fluffy sesame seed bun.
+<p>
+*Weight before cooking 4 oz. At participating McDonald's. Fresh Beef available at most restaurants in contiguous US. Not available in Alaska, Hawaii, and US Territories. </p></font></div>
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<h1><font size="7" color="white"><center>Ingredients</center></font></h1><br><br>
+<div class="r"><font size="5" color="white">
+<div class="col"><center><img style="border-radius: 30%;" src="burger4_2.png" width="200" height="200" />
+<p>Quarter Pound Bun</p>
+</center></div>
+<div class="col"><center><img style="border-radius: 30%;" src="pic1.jpg" width="200" height="200" />
+<p>Processed Cheese</p>
+Quantity:<input type="number" id="myNumber1" ><br><br>
+Cost(in Rs):<input type="number" id="myNumber1.1" ><br><br>
+<button onclick="myFunction1()">+1 ADD</button>
+<button onclick="myFunction10()">-1 SUB</button></center>
+</div>
+<div class="col"><center><img style="border-radius: 30%;" src="burger4_4.png" width="200" height="200" />
+<p>Ketchup</p>
+Quantity:<input type="number" id="myNumber2"><br><br>
+Cost(in Rs):<input type="number" id="myNumber2.1" ><br><br>
+<button onclick="myFunction2()">+1 ADD</button>
+<button onclick="myFunction20()">-1 SUB</button></center>
+</div>
+<div class="col"><center><img style="border-radius: 30%;" src="pic9.png" width="200" height="200" />
+
+<p>Pickled Slice</p></center>
+</div>
+<div class="col"><center><img style="border-radius: 30%;" src="pic10.jpg" width="200" height="200" />
+<p>Onions</p>
+</center></div>
+<div class="col"><center><img style="border-radius: 30%;" src="pic11.jpg" width="200" height="200" />
+<p>Mustard Sauce</p>
+Quantity:<input type="number" id="myNumber3"><br><br>
+Cost(in Rs):<input type="number" id="myNumber3.1" ><br><br>
+<button onclick="myFunction3()">+1 ADD</button>
+<button onclick="myFunction30()">-1 SUB</button></center></div>
+</div>
+
+<br><br><br>
+<center>
+Total Cost(in Rs.):<input type="number" id="myNumber" value="450" ><br><br>
+
+</center>
+<script>
+function myFunction1() {
+  document.getElementById("myNumber1").stepUp(1);
+  document.getElementById("myNumber1.1").stepUp(10);
+  document.getElementById("myNumber").stepUp(10);
+}
+function myFunction10() {
+  document.getElementById("myNumber1").stepDown(1);
+  document.getElementById("myNumber1.1").stepDown(10);
+  document.getElementById("myNumber").stepDown(10);
+}
+
+function myFunction2() {
+  document.getElementById("myNumber2").stepUp(1);
+  document.getElementById("myNumber2.1").stepUp(25);
+  document.getElementById("myNumber").stepUp(25);
+}
+function myFunction20() {
+  document.getElementById("myNumber2").stepDown(1);
+  document.getElementById("myNumber2.1").stepDown(25);
+  document.getElementById("myNumber").stepDown(25);
+}
+function myFunction3() {
+  document.getElementById("myNumber3").stepUp(1);
+  document.getElementById("myNumber3.1").stepUp(25);
+  document.getElementById("myNumber").stepUp(25);
+}
+function myFunction30() {
+  document.getElementById("myNumber3").stepDown(1);
+  document.getElementById("myNumber3.1").stepDown(25);
+  document.getElementById("myNumber").stepDown(25);
+}
+</script>
+
+</body>
+</html>

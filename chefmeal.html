@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Font Awesome Icons</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+.btn {
+  border: none;
+  background-color: inherit;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+ 
+}
+.warning {
+  color: white;
+}
+
+.warning:hover {
+  background: red;
+  color: white;
+}
+.ex1{
+background-color:black;
+width: 1500px;
+padding: 1px;
+
+}
+body {
+  background-color: black;
+  font-family: cursive;
+}
+
+.glow {
+  
+
+
+
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+ 
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+ .hvrbox,
+.hvrbox * {
+box-sizing: border-box;
+}
+.hvrbox {
+position: relative;
+display: inline-block;
+overflow: hidden;
+max-width: 100%;
+height: auto;
+}
+.hvrbox img {
+max-width: 100%;
+}
+.hvrbox .hvrbox-layer_bottom {
+display: block;
+}
+.hvrbox .hvrbox-layer_top {
+opacity: 0;
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, 0.6);
+color: #fff;
+padding: 15px;
+-moz-transition: all 0.4s ease-in-out 0s;
+-webkit-transition: all 0.4s ease-in-out 0s;
+-ms-transition: all 0.4s ease-in-out 0s;
+transition: all 0.4s ease-in-out 0s;
+}
+.hvrbox:hover .hvrbox-layer_top,
+.hvrbox.active .hvrbox-layer_top {
+opacity: 1;
+}
+.hvrbox .hvrbox-text {
+text-align: center;
+font-size: 18px;
+display: inline-block;
+position: absolute;
+top: 50%;
+left: 50%;
+-moz-transform: translate(-50%, -50%);
+-webkit-transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+
+}
+.hvrbox .hvrbox-text_mobile {
+font-size: 15px;
+border-top: 1px solid rgb(179, 179, 179); /* for old browsers */
+border-top: 1px solid rgba(179, 179, 179, 0.7);
+margin-top: 5px;
+padding-top: 2px;
+display: none;
+}
+.hvrbox.active .hvrbox-text_mobile {
+display: block;
+}
+ .container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: red;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.glow1{font-size: 80px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+   border: 2px solid lime; /* some kind of blue border */
+   width:500px;
+ 
+  margin: 20px;
+
+-webkit-box-shadow: 0px 0px 40px lime;
+       -moz-box-shadow: 0px 0px 40px lime;
+            box-shadow: 0px 0px 40px lime;}
+
+.glow2{font-size: 80px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+   border: 2px solid #00cccc; /* some kind of blue border */
+   width:500px;
+ 
+  margin: 20px;
+
+-webkit-box-shadow: 0px 0px 40px #00cccc;
+       -moz-box-shadow: 0px 0px 40px #00cccc;
+            box-shadow: 0px 0px 40px #00cccc;}
+
+.glow3{font-size: 80px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+   border: 2px solid #ff3399; /* some kind of blue border */
+   width:500px;
+ 
+  margin: 20px;
+
+-webkit-box-shadow: 0px 0px 40px #ff3399;
+       -moz-box-shadow: 0px 0px 40px #ff3399;
+            box-shadow: 0px 0px 40px #ff3399;}
+
+.glow4{font-size: 80px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+   border: 2px solid #fd0e35; /* some kind of blue border */
+   width:500px;
+ 
+  margin: 20px;
+
+-webkit-box-shadow: 0px 0px 40px #fd0e35;
+       -moz-box-shadow: 0px 0px 40px #fd0e35;
+            box-shadow: 0px 0px 40px #fd0e35;}
+
+
+
+.head{
+
+font-size: 20px;
+  color: #fff;
+  text-align: center;
+
+
+
+   border: 2px solid #FF0000; /* some kind of blue border */
+   width:500px;
+ hight:600px;
+  margin: 20px;
+
+-webkit-box-shadow: 0px 0px 40px #FF0000;
+       -moz-box-shadow: 0px 0px 40px #FF0000;
+            box-shadow: 0px 0px 40px #FF0000;
+
+}
+
+#rice{
+width:500px;
+hight:600px;
+}
+
+.horizontal{
+float: left;
+  padding: 10px;
+  height: 300px;
+}
+
+.columnleft{
+left-padding:33%;
+left-margin:33%;
+width: 40%;
+height:700px;
+}
+
+.columnright{
+
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="ex1">
+ 
+<p><font size="6" color="white"><b>Tap
+<i class="fa fa-glass" style="font-size:36px;color:red"></i>ate</b></font>
+&nbsp &nbsp  &nbsp &nbsp  &nbsp  &nbsp &nbsp  &nbsp &nbsp
+&nbsp &nbsp  &nbsp &nbsp  &nbsp  &nbsp &nbsp  &nbsp &nbsp
+&nbsp &nbsp  &nbsp &nbsp  &nbsp  &nbsp &nbsp  &nbsp &nbsp
+&nbsp &nbsp  &nbsp &nbsp  &nbsp  &nbsp &nbsp  &nbsp &nbsp
+&nbsp &nbsp  &nbsp &nbsp  &nbsp  &nbsp &nbsp  &nbsp &nbsp
+&nbsp &nbsp  &nbsp &nbsp  &nbsp  &nbsp &nbsp  &nbsp &nbsp
+&nbsp &nbsp  &nbsp &nbsp  &nbsp  &nbsp &nbsp  &nbsp &nbsp
+&nbsp &nbsp  &nbsp &nbsp  &nbsp  &nbsp &nbsp  &nbsp &nbsp
+&nbsp &nbsp  &nbsp &nbsp  &nbsp  &nbsp &nbsp  &nbsp &nbsp
+<button onclick="window.location.href='rest.html';" class="btn warning float-right">Burgers</button>
+<button onclick="window.location.href='chicken.html';" class="btn warning float-right"></button>
+<button onclick="window.location.href='2.html';" class="btn warning float-right">Salads</button>
+<button onclick="window.location.href='pizza.html';" class="btn warning float-right">Pizza</button>
+
+</p>
+
+</div>
+<br>
+<div class="horizontal">
+
+<div class="columnleft">
+ <div class="head">
+ <img id="rice" src="gif1.gif" alt="gif">
+    <div class="centered">CHEF MEAL OF THE DAY..!</div><br>
+ </div>
+</div>
+
+
+
+
+ 
+ <br><Br><br><br><br><br><br>
+ <div class="row">
+  <div class="column">
+  <div class="hvrbox"><div class="glow1">
+<img src="brunch.png" alt="Mountains" height="400" width="500"  class="hvrbox-layer_bottom">
+</div> <div class="hvrbox-layer_top">
+<div class="hvrbox-text">
+<center><font size="45px">Brunch
+ <label class="container">Non-Flip French Toast(Rs.450)
+  <input type="checkbox" checked="checked">
+  <span class="checkmark"></span>
+</label>
+<label class="container">Sandwich(Rs.500)
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+<label class="container">Muffins(Rs.400)
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+</div>
+</div>
+ 
+</div></div>
+<div class="column">
+  <div class="hvrbox"><div class="glow3">
+<img src="lunch.jpg" alt="Mountains" height="400" width="500" class="hvrbox-layer_bottom">
+</div> <div class="hvrbox-layer_top">
+<div class="hvrbox-text">
+<center><font size="45px">Lunch
+ <label class="container">Creamy Chicken Pasta(Rs.500)
+  <input type="checkbox" checked="checked">
+  <span class="checkmark"></span>
+</label>
+<label class="container">Garden Stroganoff(Rs.450)
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+<label class="container">Lasagne(Rs.400)
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+</div>
+</div>
+ 
+</div>
+</div></div>
+<br><br>
+
+
+ <div class="row">
+  <div class="column">
+  <div class="hvrbox"><div class="glow4">
+<img src="supper.jpg" alt="Mountains" height="400" width="500" class="hvrbox-layer_bottom">
+</div><div class="hvrbox-layer_top">
+<div class="hvrbox-text">
+<center><font size="45px">Supper
+ <label class="container">Noodle Today(Rs.300)
+  <input type="checkbox" checked="checked">
+  <span class="checkmark"></span>
+</label>
+<label class="container">Ginger Bread(Rs.450)
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+<label class="container">Desserts(Rs.250)
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</div>
+</div>
+ 
+</div></div>
+<div class="column">
+  <div class="hvrbox"><div class="glow2">
+<img src="dinner.jpg" alt="Mountains" height="400" width="500" class="hvrbox-layer_bottom">
+</div><div class="hvrbox-layer_top">
+<div class="hvrbox-text">
+<center><font size="45px">Dinner
+ <label class="container">Burnt aubergine (Rs.370)
+  <input type="checkbox" checked="checked">
+  <span class="checkmark"></span>
+</label>
+<label class="container">pring vegetable tart(Rs.370)
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+<label class="container">Bean & halloumi stew(Rs.400)
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+</div>
+</div>
+ 
+</div>
+</div></div>
+<br><br>
+
+
+
+</div>
+</div></div><br><br>
+
+ 
+</div>
+<br><br><br>
+
+
+</body>
+</html>
